@@ -1,0 +1,5 @@
+[flake8]
+# Recommended config for compatibility with black formatter
+max-line-length = 88
+docstring-convention=google
+extend-ignore = E203

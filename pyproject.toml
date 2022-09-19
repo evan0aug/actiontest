@@ -1,0 +1,4 @@
+[tool.isort]
+# recommended config for compatibility with black formatter
+profile = "black"
+line_length = 88
