@@ -2,3 +2,13 @@
 # recommended config for compatibility with black formatter
 profile = "black"
 line_length = 88
+# This legacy file has a lot of imports, and it's not worth changing
+# skip = "models/lm-evaluation-harness/lm_eval/tasks/__init__.py"
+
+[tool.pylint.'MESSAGES CONTROL']
+# Torch has generated members that confuse pylint.
+# Disabling these messages for torch
+generated-members="torch.*"
+# Legacy code can have a larger number of local variables.
+# Increasing the default from 15 to 25
+max-locals=25
