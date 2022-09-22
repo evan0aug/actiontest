@@ -10,7 +10,7 @@ STATS = ["STR", "DEX", "CON", "INT", "WIS", "CHA"]
 
 
 def generate_stats() -> np.ndarray:
-    """Generate stats?"""
+    """Generate stats and ennumerate through STATS."""
     for stat in STATS:
         stats = np.random.randint(1, 7, (1, 4))
         stats = np.delete(stats, stats.argmin())
