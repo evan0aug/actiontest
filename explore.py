@@ -19,7 +19,7 @@ def generate_stats() -> np.ndarray:
 
 
 def main():
-    """Do something useful."""
+    """Do something useful. Seriously."""
     generate_stats()
 
 
