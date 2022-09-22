@@ -14,5 +14,3 @@ jobs:
       - name: List files in the repository
       - run: |
           ls ${{ github.workspace }}
-      - name: Inject an error!
-      - run: ls foo
