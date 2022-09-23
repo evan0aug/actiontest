@@ -23,9 +23,9 @@ def main():
     generate_stats()
 
 
+main()
 now = time.localtime()
 print(now)
-main()
 sys.exit()
 
 print("Won't get here - will anything warn me?")
