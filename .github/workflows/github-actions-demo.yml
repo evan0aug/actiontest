@@ -16,3 +16,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Expected failure
         run: ls foo
+      - name: Testing post failure
+        run: echo "Yeah"
