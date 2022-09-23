@@ -1,7 +1,7 @@
 name: Black (python)
 on: [push, pull_request]
 jobs:
-  lint:
+  Verify life is good:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
