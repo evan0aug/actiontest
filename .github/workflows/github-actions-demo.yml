@@ -18,10 +18,25 @@ jobs:
         uses: trilom/file-changes-action@a6ca26c14274c33b15e6499323aac178af06ad4b
         with:
           fileOutput: 'json'
-
       # For verification
       - name: Show files changed
         run: cat $HOME/files.json
+
+
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Do something with this ${changed_file}."
+          done
+
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - run: |
+         echo ${{ steps.files.outputs.all }};
+
+
+
 
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
