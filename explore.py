@@ -5,7 +5,8 @@ import time
 import numpy as np
 
 # TODO: allow user to arrange stats to rolled outcomes.
-STATS = ["STR", "DEX", "CON", "INT", "WIS", "CHA"]
+STATS = ["STR", "DEX", "CON",
+         "INT", "WIS", "CHA"]
 
 
 def generate_stats() -> np.ndarray:
